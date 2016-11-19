@@ -1,0 +1,8 @@
+<div>
+    <ul ng-repeat="season in scripts.seasons">
+        <li>{{season.name}}</li>
+        <ul ng-repeat="episode in season.episodes">
+            <li>{{episode.title}}</li>
+        </ul>
+    </ul>
+<div>
