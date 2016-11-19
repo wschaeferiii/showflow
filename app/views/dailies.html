@@ -1,15 +1,15 @@
-<div ng-repeat="season in scripts.seasons">
+<div ng-repeat="season in dailies.seasons">
     <div>{{season.name}}</div>
         <div ng-repeat="episode in season.episodes track by $index">
             <ul>
-                <li ng-click="scripts.openScript(episode)">{{episode.title}}</li>
+                <li ng-click="dailies.openDaily(episode)">{{episode.title}}</li>
             </ul>
         </div>
     </div>
 <div>
 <div>
-    Script
-    {{scripts.display}}
+    Daily
+    {{dailies.display}}
 </div>
 <div>
     MetaDeta

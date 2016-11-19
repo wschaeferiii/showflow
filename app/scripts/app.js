@@ -29,6 +29,26 @@ angular
         controller: 'ScriptsCtrl',
         controllerAs: 'scripts'
       })
+      .when('/concept', {
+        templateUrl: 'views/concept.html',
+        controller: 'ConceptCtrl',
+        controllerAs: 'concept'
+      })
+      .when('/dailies', {
+        templateUrl: 'views/dailies.html',
+        controller: 'DailiesCtrl',
+        controllerAs: 'dailies'
+      })
+      .when('/finishedshow', {
+        templateUrl: 'views/finishedshow.html',
+        controller: 'FinishedShowCtrl',
+        controllerAs: 'finishedshow'
+      })
+      .when('/marketing', {
+        templateUrl: 'views/marketing.html',
+        controller: 'MarketingCtrl',
+        controllerAs: 'marketing'
+      })
       .otherwise({
         redirectTo: '/'
       });
